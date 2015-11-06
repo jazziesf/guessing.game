@@ -5,7 +5,7 @@ var userName = "Sebastian";
 
 var question1 = prompt("Does your love for food take you to the most random places?");
     if (question1.toUpperCase == "y" || question1.toUpperCase == "yes") {
-      alert("The best food experiences are the one's you never plan" + name);
+      alert("The best food experiences are the one's you never plan " + name);
         }
     else if (question1.toUpperCase == "n" || question1.toUpperCase == "no") {
       alert("Be adventures " + userName + " sometimes the best food is found at the hole in the wall down the stree");
@@ -16,7 +16,7 @@ var question1 = prompt("Does your love for food take you to the most random plac
 
 var question2 = prompt("Have you ever been to San Francisco?");
     if (question2.toUpperCase == "y" || question2.toUpperCase == "yes") {
-      alert(userName + "you get around don't you!");
+      alert(userName + " you get around don't you!");
       }
     else if ( question2.toUpperCase == "n" || question2.toUpperCase == "no") {
       alert(userName + " if you ever find yourself there a must see is Crissy Field");
@@ -30,12 +30,24 @@ var question3 = prompt("Based on my images do you think I'm from California");
       alert(userName + " they don't call it the golden state for nothing");
       }
     else if (question3.toUpperCase == "n" || question3.toUpperCase == "no") {
-      alert(userName + "the Golden Gate Bridge didnt' give it away?");
+      alert(userName + " the Golden Gate Bridge didnt' give it away?");
       }
     else {
-      alert(userName + "Washington would have been just a good a guest");
+      alert(userName + " Washington would have been just a good a guest");
+      }
+
+var question4 = prompt("Do you love corissant?");
+    if (question4.toUpperCase == "y" || question4.toUpperCase == "yes") {
+      alert(userName + " they are savory and sweet all at the same time");
+      }
+    else if (question4.toUpperCase == "n" || question4.toUpperCase == "no") {
+      alert(userName + " think about what pastery you couldn't live without?");
+      }
+    else {
+      alert(userName + " there isn't a pastery I haven't met I didn't like");
       }
 
 console.log(question1);
 console.log(question2);
 console.log(question3);
+console.log(question4);
