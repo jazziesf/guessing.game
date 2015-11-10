@@ -1,0 +1,14 @@
+img {
+  border: solid;
+  color:white;
+}
+
+h1 {
+  background-color: teal;
+  background-opacity: 0.2;
+}
+
+#demo, #demo2, #demo3, #demo4, #demo5 {
+  color:white;
+}
+
