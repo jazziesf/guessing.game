@@ -1,149 +1,102 @@
-alert("Welcome to my page");
+var userName = prompt("Welcome to my page, what is your name?");
+document.getElementById("questions");
 
-var userName = "Sebastian";
+var answers = ["yes","y","no","n"];
+var questions = ['Does your love for food take you to the most random places?'];
+questions[1]= "Have you ever been to San Francisco?";
+questions[2]= "Based on my images do you think I'm from California?";
+questions[3]= "Do you love croissant?";
+
 
 function myFunction() {
   var txt;
-  var question1 = prompt("Does your love for food take you to the most random places?");
-    if (question1.toLowerCase() === "y" || question1.toLowerCase() === "yes") {
-     txt = "You're on the right track, " + userName + " ! Making a food bucket list might encouragement your inner foodie to explore more.";
+  var question1 = prompt(questions[0]);
+   if (question1.toLowerCase() === answers[0] || question1.toLowerCase() === answers[1]){
+     txt = " You're on the right track, " + userName + " ! Making a food bucket list might encouragement your inner foodie to explore more.";
+     pic ='<img src="http://static.caloriecount.about.com/images/medium/cream-fluid-light-coffee-158349.jpg"/>'
         }
-    else if (question1.toLowerCase() === "n" || question1.toLowerCase() === "no") {
-     txt = "Be adventures " + userName + " sometimes the best food is found at the hole in the wall down the street.";
+    else if (question1.toLowerCase() === answers[2] || question1.toLowerCase() === answers[3]){
+     txt = " Be adventures " + userName + " sometimes the best food is found at the hole in the wall down the street.";
+     pic = '<img src="http://cdn.somegames.org/c/sgo/cover/72/adventure-time-jumping-finn/adventure-time-jumping-finn.jpg?v=1417486780"/>'
     }
     else {
-     txt = "The best food experiences are the one's you never plan " + name;
+     txt = " The best food experiences are the one's you never plan " + name;
+     pic = '<img src="https://s-media-cache-ak0.pinimg.com/236x/8b/23/59/8b23595722eb67eadb2a196a6ba4f4c7.jpg"/>'
     }
-    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("demo").innerHTML = pic + txt;
 }
 
 function myFunction2() {
-  var txt2;
-  var question2 = prompt("Have you ever been to San Francisco?");
-    if (question2.toLowerCase() === "y" || question2.toLowerCase() === "yes") {
-      txt2 = userName + " you get around don't you!";
+  var txt;
+  var question2 = prompt(questions[1]);
+    if (question2.toLowerCase() === answers[0] || question2.toLowerCase() === answers[1]) {
+      txt = userName + " you get around don't you!";
+      pic = '<img src="http://www.san-francisco-travel-secrets.com/images/san-francisco-things-to-do-04.jpg"/>'
       }
-    else if (question2.toLowerCase() === "n" || question2.toLowerCase() === "no") {
-      txt2 = userName + " if you ever find yourself there a must see is Crissy Field.";
+    else if (question2.toLowerCase() === answers[2] || question2.toLowerCase() === answers[3]) {
+      txt = userName + " if you ever find yourself there a must see is Crissy Field.";
+      pic = '<img src="http://o.aolcdn.com/dims-global/dims/ABOUTME/5/200/200/100/http://d3mod6n032mdiz.cloudfront.net/thumb2/r/o/g/rogerbrown/rogerbrown-840x560.jpg"/>'
      }
     else {
-      txt2 = userName + " one times is all it takes to fall in love with San Francisco.";
+      txt = userName + " one times is all it takes to fall in love with San Francisco.";
+      pic = '<img src="https://qph.is.quoracdn.net/main-thumb-t-1437613-200-zraegqyzmxmnewxpmsceprxrnktghjle.jpeg"/>'
      }
-    document.getElementById("demo2").innerHTML = txt2;
+    document.getElementById("demo2").innerHTML = pic + txt;
 }
 
 function myFunction3() {
-  var txt3;
-  var question3 = prompt("Based on my images do you think I'm from California");
-    if (question3.toLowerCase() === "y" || question3.toLowerCase() === "yes") {
-      txt3 = userName + " they don't call it the golden state for nothing.";
+  var txt;
+  var question3 = prompt(questions[2]);
+    if (question3.toLowerCase() === answers[0] || question3.toLowerCase() === answers[1]) {
+      txt = userName + " they don't call it the golden state for nothing.";
+      pic = '<img src="https://qph.is.quoracdn.net/main-thumb-t-835-200-muatfkhhqbyswgzdnyhkppdiiasquzpt.jpeg"/>'
       }
-    else if (question3.toLowerCase() === "n" || question3.toLowerCase() === "no") {
-      txt3 = userName + " the Golden Gate Bridge didn't' give it away?";
+    else if (question3.toLowerCase() === answers[2] || question3.toLowerCase() === answers[3]) {
+      txt = userName + " the Golden Gate Bridge didn't' give it away?";
+      pic = '<img src="https://qph.is.quoracdn.net/main-thumb-t-835-200-muatfkhhqbyswgzdnyhkppdiiasquzpt.jpeg"/>'
       }
     else {
-      txt3 = userName + " Washington would have been just a good a guest.";
+      txt = userName + " Washington would have been just a good a guest.";
+      pic = '<img src="http://www.acog.org/-/media/Education-and-Events/2015Seattle.jpg?la=en"/>'
       }
-      document.getElementById("demo3").innerHTML = txt3;
+      document.getElementById("demo3").innerHTML = pic + txt;
 }
 
 function myFunction4() {
-  var txt4;
-  var question4 = prompt("Do you love croissant?");
-    if (question4.toLowerCase() === "y" || question4.toLowerCase() === "yes") {
-      txt4 = userName + " they are savory and sweet all at the same time.";
+  var txt;
+  var question4 = prompt(questions[3]);
+    if (question4.toLowerCase() === answers[0] || question4.toLowerCase() ===  answers[1]) {
+      txt = userName + " they are savory and sweet all at the same time.";
+      pic = '<img src="http://www.recipe4living.com/assets/itemimages/200/200/3/default_efac19f619ba219836d1c8bdd23bd4db_MeatballCroissantSandwichLettuceTomatoCheese.jpg"/>'
       }
-    else if (question4.toLowerCase() === "n" || question4.toLowerCase() === "no") {
-      txt4 = userName + " think about what pastry you couldn't live without?";
+    else if (question4.toLowerCase() === answers[2] || question4.toLowerCase() === answers[3]) {
+      txt = userName + " think about what pastry you couldn't live without?";
+      pic = '<img src="http://www.decosee.com/picture/beautiful-red-bakery-shop-200x200.jpg"/>'
       }
     else {
-      txt4 = userName + " there isn't a pastry I haven't met I didn't like.";
+      txt = userName + " there isn't a pastry I haven't met I didn't like.";
+      pic = '<img src="http://rs755.pbsrc.com/albums/xx195/skez520mia/HAPPY%20BIRTHDAY/gifgarfield-taart_Zer0.jpg~c200"/>'
       }
-      document.getElementById("demo4").innerHTML = txt4;
+      document.getElementById("demo4").innerHTML = pic + txt;
 }
 
 function myFunction5() {
-  var txt5;
+  var txt;
   var question5 = prompt("How many times a day do you have coffee?");
     if (question5 <= 2 ) {
-      txt5 = userName + " that's pretty minimal for a Seattleite.";
+      txt = userName + " that's pretty minimal for a Seattleite.";
+      pic = '<img src="http://rs77.pbsrc.com/albums/j55/Nolamom/Posters/Coffee/decafproblem.jpg~c200"/>'
       }
     else if (question5 >= 3 && question5 <= 7) {
-      txt5 = userName + " whoa you should slow down.";
+      txt = userName + " whoa you should slow down.";
+      pic = pic = '<img src="http://i.gr-assets.com/images/S/photo.goodreads.com/books/1429364541i/25146075._UY200_.jpg"/>'
       }
     else {
-      txt5 = userName + " I'm hope you have medicinal reasons for that much caffeine.";
+      txt = userName + " I'm hope you have medicinal reasons for that much caffeine.";
+      pic = '<img src="http://www.hdwallpapersnew.net/wp-content/uploads/2015/03/3D-ninja-Cartoon-high-quality-wallpaper-download-free-200x200.jpg"/>'
       }
-      document.getElementById("demo5").innerHTML = txt5;
+      document.getElementById("demo5").innerHTML = pic + txt;
 }
 
-/*
-
-var question1 = alert("Does your love for food take you to the most random places?");
-    console.log(question1);
-    if (question1.toLowerCase() === "y" || question1.toLowerCase() === "yes") {
-      alert("The best food experiences are the one's you never plan " + name);
-        }
-    else if (question1.toLowerCase() === "n" || question1.toLowerCase() === "no") {
-      alert("Be adventures " + userName + " sometimes the best food is found at the hole in the wall down the stree");
-    }
-    else {
-      alert("Youre on the right track, " + userName + " ! Making a food bucket list might encouragment your inner foodie to explore");
-    }
-
-var question2 = prompt("Have you ever been to San Francisco?");
-    console.log(question2);
-    if (question2.toLowerCase() === "y" || question2.toLowerCase() === "yes") {
-      alert(userName + " you get around don't you!");
-      }
-    else if (question2.toLowerCase() === "n" || question2.toLowerCase() === "no") {
-      alert(userName + " if you ever find yourself there a must see is Crissy Field");
-     }
-    else {
-      alert(userName + " one times is all it takes to fall in love with San Francisco");
-     }
-
-var question3 = prompt("Based on my images do you think I'm from California");
-    console.log(question3);
-    if (question3.toLowerCase() === "y" || question3.toLowerCase() === "yes") {
-      alert(userName + " they don't call it the golden state for nothing");
-      }
-    else if (question3.toLowerCase() === "n" || question3.toLowerCase() === "no") {
-      alert(userName + " the Golden Gate Bridge didnt' give it away?");
-      }
-    else {
-      alert(userName + " Washington would have been just a good a guest");
-      }
-
-var question4 = prompt("Do you love corissant?");
-    console.log(question4);
-    if (question4.toLowerCase() === "y" || question4.toLowerCase() === "yes") {
-      alert(userName + " they are savory and sweet all at the same time");
-      }
-    else if (question4.toLowerCase() === "n" || question4.toLowerCase() === "no") {
-      alert(userName + " think about what pastery you couldn't live without?");
-      }
-    else {
-      alert(userName + " there isn't a pastery I haven't met I didn't like");
-      }
-
-var question5 = prompt("How many times a day do you have coffee");
-    console.log(question5);
-    if (question5 <= 2 ) {
-      alert(userName + " that's pretty miniual for a Seattlite");
-      }
-    else if (question5 >= 3 && question5 <= 7) {
-      alert(userName + " whooo you should slow down");
-      }
-    else {
-      alert(userName + " I'm hope you have medicinal reasons for that much caffine");
-      }
-
-      console.log(question1);
-      console.log(question2);
-      console.log(question3);
-      console.log(question4);
-      console.log(question5);
-      */
 
 
